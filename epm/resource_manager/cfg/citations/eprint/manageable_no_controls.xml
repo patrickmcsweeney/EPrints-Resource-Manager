@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+	A Resource Manager Manageable Resource
+-->
+<cite:citation xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:epc="http://eprints.org/ep3/control"
+	xmlns:cite="http://eprints.org/ep3/citation">
+	
+<div id="manageable_id_{eprintid}" class="ep_manageable">
+	<div class="ep_manageable_data">
+		<span class="ep_manageable_data_title"><print expr="title"/></span>
+		<span class="ep_manageable_data_viewperms"><print expr="viewperms"/></span>
+	</div>
+	<div style="clear: both;"></div>
+</div>
+
+</cite:citation>

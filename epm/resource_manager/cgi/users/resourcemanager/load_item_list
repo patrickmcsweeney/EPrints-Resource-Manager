@@ -1,0 +1,42 @@
+#!/bin/perl
+
+# If you want to modify the list that is rendered please consult
+# archives/ARCHIVEID/cfg/cfg.d/resourcemanager.pl.
+
+my $session = new EPrints::Session;
+exit unless defined $session;
+
+my $response = $session->make_doc_fragment;
+
+my $user = $session->current_user;
+unless( defined $user )
+{
+	$response->appendChild( $session->html_phrase( 'cgi/resourcemanager:must_be_loggedin' ) );
+	$session->terminate;
+	print EPrints::XML::to_string( $response, undef, 1 );
+	exit;
+}
+
+my $type = $session->param( 'type' );
+unless( defined $type )
+{
+	$response->appendChild( $session->html_phrase( 'cgi/resourcemanager:no_type_defined' ) );
+	$session->terminate;
+	print EPrints::XML::to_string( $response, undef, 1 );
+	exit;
+}
+
+if( $session->get_repository->can_call( 'resourcemanager_item_list_render' ) )
+{
+	my $filter = $session->plugin( "ResourceManagerFilter" );
+	$response->appendChild( $session->get_repository->call( 'resourcemanager_item_list_render', $session, $type, $filter ) );
+}
+
+my $js = $session->make_javascript(<<INIT_SCRIPT
+window.initialiseMetadataRollover();
+INIT_SCRIPT
+);
+$response->appendChild( $js );
+
+$session->terminate;
+print EPrints::XML::to_string( $response, undef, 1 );

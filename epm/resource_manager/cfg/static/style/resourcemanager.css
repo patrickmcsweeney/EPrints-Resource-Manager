@@ -1,0 +1,129 @@
+.ed_resourcemanager_filter_box_title
+{
+	font-size:14px;
+	font-weight:bold;
+}
+
+.ep_tab_panel
+{
+	height: auto;
+}
+
+/*.ed_resourcemanager_content*/
+.ep_bulkaction_form
+{
+	display: inline;
+}
+
+.ed_resourcemanager_filter_box, .ed_resourcemanager_filter_box_content
+{
+	width: 200px;
+	display: inline;
+}
+
+.ep_manageable_action_button
+{
+}
+
+.ep_manageable_action_icon
+{
+	vertical-align: middle;
+	padding: 5px;
+}
+
+.ep_resource_manager_filter {
+	background-color: #ececec;
+	border-color: #c4caf2;
+	border-style: solid;
+	border-width: 2px;
+	margin: 10px;
+	padding: 5px;
+	width: 270px;
+}
+
+.ep_resourcemanager_tag {
+	padding: 2px;
+}
+
+.ep_manageable_data
+{
+	vertical-align:center;
+	margin: 2px;
+}
+
+.ep_manageable, .ep_resourcemanager_block {
+	background-color: #ececec;
+	border-style: solid;
+	border-width: 2px;
+	margin: 3px;
+	padding: 5px;
+	text-align: left;
+}
+
+.ep_resourcemanager_block {
+	text-align: center;
+}
+
+.ep_manageable:hover {
+	cursor: pointer;
+}
+
+.ep_manageable {
+	border-color: #c4caf2;
+}
+
+.ep_manageable.ep_manageable_selected {
+	border-color: #007d92;
+}
+
+.ep_bulkaction_summary_list {
+	height: 300px;
+	overflow: auto;
+}
+
+.ep_bulkaction_summary_list .ep_manageable {
+	cursor: none;
+}
+
+.ep_manageable_data {
+	float: left;
+	width: 650px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ep_manageable_data .ep_manageable_data_title {
+	font-size: 14px;
+}
+
+
+.ep_manageable_metadata {
+	list-style: none;
+}
+
+.ep_manageable_controls {
+	float: right;
+	width: 150px;
+}
+
+.ep_manageable_controls ul {
+	text-align: right;
+}
+
+.ep_manageable_controls ul li {
+	display: inline;
+	list-style: none;
+}
+
+.ep_manageable_controls
+{
+	margin: 2px;
+}
+
+.ep_resourcemanager_filter {
+	text-align: center;
+}
+
+.ep_resourcemanager_filter_text {
+	font-size: 1.6em;
+}

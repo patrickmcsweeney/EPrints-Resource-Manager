@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+	A Resource Manager Manageable Resource
+-->
+<cite:citation xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:epc="http://eprints.org/ep3/control"
+	xmlns:cite="http://eprints.org/ep3/citation">
+
+<div class="ep_manageable_data">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	<td width="5%" valign="middle" align="center">
+		<input type="checkbox" name="bulkaction_eprintids" value="{eprintid}" id="select-{eprintid}" class="ep_resource_manager_select_check"/>
+	</td>
+	<td width="80%" valign="middle" align="left">
+		<cite:linkhere><span class="ep_manageable_data_title"><print expr="title"/></span></cite:linkhere>
+	</td>
+	<td width="15%" valign="middle" align="right">
+		<span class="ep_manageable_data_viewperms"><strong><print expr="viewperms"/></strong></span>
+	</td>
+	</tr>
+	</table>
+	
+</div>
+<div class="ep_manageable_controls">
+	<ul>
+		<li>
+			<a href="#" title="More details" onclick="return refreshShare({eprintid},'manageable_extra');" class="ep_manageable_action_button">
+				<img class="ep_manageable_action_button ep_manageable_action_icon" src="{$config{rel_path}}/images/resourcemanager/resmgr_more.png" border="0"/>
+			</a>
+		</li>
+		<li>
+			<span title="View" class="ep_manageable_action_button">
+			<cite:linkhere>
+				<!--<epc:phrase ref="Plugin/Screen/ResourceManager:view"/>-->
+				<img class="ep_manageable_action_button ep_manageable_action_icon" src="{$config{rel_path}}/images/resourcemanager/resmgr_view.png" border="0"/>
+			</cite:linkhere>
+			</span>
+		</li>
+		<li>
+			<a href="{$config{userhome}}?screen=EPrint::Edit&amp;eprintid={eprintid}" title="Edit" class="ep_manageable_action_button">
+				<!--	<epc:phrase ref="Plugin/Screen/ResourceManager:edit"/>	-->
+				<img class="ep_manageable_action_button ep_manageable_action_icon" src="{$config{rel_path}}/images/resourcemanager/resmgr_edit.png" border="0"/>
+			</a>
+		</li>
+		<li>
+			<a href="{$config{userhome}}?screen=EPrint::Remove&amp;eprintid={eprintid}" title="Delete" class="ep_manageable_action_button">
+				<!--	<epc:phrase ref="Plugin/Screen/ResourceManager:remove"/>  -->
+				<img class="ep_manageable_action_button ep_manageable_action_icon" src="{$config{rel_path}}/images/resourcemanager/resmgr_remove.png" border="0"/>
+			</a>
+		</li>
+	</ul>
+</div>
+<div style="clear:both;">
+</div>
+
+</cite:citation>
