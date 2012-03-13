@@ -13,10 +13,12 @@ $c->{resourcemanager_items_screen_enabled} = 0;
 # This is the list of eprint types that you want to manage in the resource manager.
 # If this list is empty or undefined then the plugin will fallback to the list of
 # eprint types specified in archives/ARCHIVEID/cfg/namedsets/eprint
-$c->{resourcemanager_display_types} = [
-	'resource',
-	'collection'
-];
+
+#$c->{resourcemanager_display_types} = [
+#	'article',
+#	'resource',
+#	'collection'
+#];
 
 # resourcemanager_filter_fields
 #

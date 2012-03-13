@@ -43,7 +43,7 @@ sub render_title
 
 	if( defined $type )
 	{
-		$title = $self->html_phrase( $type.'_title' );
+		$title = $self->{session}->html_phrase( "eprint_typename_$type" );
 	}
 	else
 	{

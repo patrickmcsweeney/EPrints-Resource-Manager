@@ -8,16 +8,16 @@
         <file>
           <filename>epm/resource_manager/cfg/cfg.d/resourcemanager.pl</filename>
           <mime_type>text/plain</mime_type>
-          <hash>c68c263d49e2d2cbf3043781f4228239</hash>
+          <hash>ece58b242a63dcec73d43b93cbf51595</hash>
           <hash_type>MD5</hash_type>
-          <filesize>4424</filesize>
+          <filesize>4442</filesize>
         </file>
         <file>
           <filename>epm/resource_manager/cfg/citations/eprint/manageable.xml</filename>
           <mime_type>application/xml</mime_type>
-          <hash>3b4ab03f3631ce7f21d39a7337806e24</hash>
+          <hash>1389aa2080163b852de58f66703e2ef3</hash>
           <hash_type>MD5</hash_type>
-          <filesize>2340</filesize>
+          <filesize>2406</filesize>
         </file>
         <file>
           <filename>epm/resource_manager/cfg/citations/eprint/manageable_no_controls.xml</filename>
@@ -92,16 +92,16 @@
         <file>
           <filename>plugins/EPrints/Plugin/Screen/ResourceManager.pm</filename>
           <mime_type>text/x-c++</mime_type>
-          <hash>41ef9b449cbef211d7036e09534efdc2</hash>
+          <hash>e3433075b63a01e6773bd9e7e5a999aa</hash>
           <hash_type>MD5</hash_type>
-          <filesize>2659</filesize>
+          <filesize>2777</filesize>
         </file>
         <file>
           <filename>plugins/EPrints/Plugin/Screen/ResourceManagerTab.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>7888dd6414fae923134e669df7762454</hash>
+          <hash>f33bdf54cee43664e49cc84b1fd4e39e</hash>
           <hash_type>MD5</hash_type>
-          <filesize>7814</filesize>
+          <filesize>7834</filesize>
         </file>
       </files>
       <mime_type>text/plain</mime_type>
@@ -110,5 +110,5 @@
       <content>install</content>
     </document>
   </documents>
-  <version>1.0.0</version>
+  <version>1.0.2</version>
 </epm>

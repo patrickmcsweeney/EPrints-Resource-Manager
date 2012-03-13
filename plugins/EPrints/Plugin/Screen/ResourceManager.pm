@@ -41,6 +41,14 @@ sub render
 	my $links = {};
 
 	my $types = $session->get_repository->get_conf( 'resourcemanager_display_types' );
+	if(!defined $types)
+	{
+		$types = $session->{types}->{eprint};
+	}
+
+	use Data::Dumper;
+	print STDERR Dumper($types);
+
 	my $current = $types->[0];
 
 	my( $screen, $panel );
